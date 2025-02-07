@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+    <!--
+        1)ordered list
+        2)unordered list
+        3)description list
+        4)nested list
+    -->
+
+                        <!-- /// ordered list /// -->
+
+    <!-- <ol> ordered list , <li> list item -->
+
+
+    <!--
+         1.java
+         2.python
+         3.html
+         4.css
+         5.javascript
+    -->
+
+    <ol> <!-- auto numbers dala ordered list ekk hadagannawa.. -->
+        <li>java</li>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ol>
+
+    <ol start="10"> <!-- start eken patan ganna ona mona number ekenda kyala denawa.. -->
+        <li>java</li>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ol>
+
+<!--    a for lowercase letters-->
+<!--    A for uppercase letters-->
+<!--    i for lowercase Roman numerals-->
+<!--    I for uppercase Roman numerals-->
+<!--    1 for numbers (default)-->
+
+    <ol type="a"> <!-- dena type(a,A,i,I,1) eka dala ordered list ekk hadagannawa..-->
+        <li>java</li>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ol>
+
+    <ol reversed>
+        <li>java</li>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ol>
+
+    <ol type="a" start="10" >
+        <li>java</li>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ol>
+
+                        <!-- /// Unordered list /// -->
+
+    <!-- <ul> unordered list , <li> list item -->
+
+    <ul>
+        <li>java</li>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ul>
+
+    <!-- 'type' eken unordered list eke type eka denna puluwan..(square,circle,disk(default))-->
+
+    <ul type="circle">
+        <li>java</li>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ul>
+
+
+                        <!-- /// Description list /// -->
+
+    <!-- <dl> description list , <dt> description title , <dd> description detail  -->
+
+    <dl>
+        <dt>Frontend Technologies</dt>
+        <dd>html</dd>
+        <dd>css</dd>
+        <dd>Javascript</dd>
+        <dd>React.js</dd>
+        <dd>Angular</dd>
+        <dd>Vue.js</dd>
+        <dd>Remix.js</dd>
+        <dt>Backend Technologies</dt>
+        <dd>Node.js</dd>
+        <dd>Express.js</dd>
+        <dd>Mongodb</dd>
+        <dd>Mongoose</dd>
+        <dd>Java</dd>
+    </dl>
+
+
+                        <!-- /// Nested list /// -->
+
+    <ul>
+        <li>Java</li>
+        <li>Project Management</li>
+        <li>Internet Technology</li>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+            </ul>
+        <li>RAD</li>
+            <ol>
+                <li>Node.jas</li>
+                <li>React.js</li>
+                <li>React.native</li>
+            </ol>
+    </ul>
+
+
+    <ol>
+        <li>Sri Lanka</li>
+        <li>India</li>
+            <ol type="a" start="5">
+                <li>Western india</li>
+                    <ul type="square">
+                        <li>Goa</li>
+                        <li>Gujarat</li>
+                            <ul type="disc">
+                                <li>Area 1</li>
+                                <li>Area 2</li>
+                                <li>Area 3</li>
+                                <li>Area 4</li>
+                            </ul>
+                    </ul>
+                <li>Eastern india</li>
+                <li>Nothern india</li>
+                <li>Southern india</li>
+                    <ul type="circle">
+                        <li>Kerala</li>
+                        <li>Chennai</li>
+                    </ul>
+            </ol>
+    </ol>
+
+    <hr>
+
+    <ol>
+        <li>Sri Lanka</li>
+        <li>India</li>
+            <ol type="a" start="5">
+                <li><u>Western India</u></li>
+                    <p>Welcome to <b>Western India</b></p>
+                        <ul type="square">
+                            <li>Goa</li>
+                                <p>Most <i>beautiful</i> area in the world</p>
+                            <li>Gujarat</li>
+                                <ul type="disc">
+                                    <li>Area 1</li>
+                                    <li><mark>Area 2</mark></li>
+                                    <li>Area 3</li>
+                                    <li>Area 4</li>
+                                </ul>
+                        </ul>
+                <li>Eastern india</li>
+                <li>Nothern india</li>
+                <li>Southern india</li>
+                    <ul type="circle">
+                        <li>Kerala</li>
+                        <li><h1>Chennai</h1></li>
+                    </ul>
+            </ol>
+    </ol>
+
+</body>
+</html>

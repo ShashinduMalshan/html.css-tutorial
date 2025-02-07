@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html Forms</title>
+</head>
+
+<body>
+    <form>
+
+        <!-- Input -->
+
+        <!-- <input> user inputs ganna use karanawa..default enne text input ekk ganna..inline element ekk widiyata wada karanawa..-->
+        <!-- (type) use karan input eke type eka danna use karanawa..-->
+        <!-- (text) input type eka text ekk -->
+        <!-- (number) input type eka number ekk -->
+        <!-- (password) input type eka password ekk -->
+        <!-- (email) input type eka email ekk -->
+        <!-- (url) input type eka url ekk -->
+        <!-- (search) search bar ekk widiyata wada karanawa -->
+        <!-- (tel) input type eka phone number ekk -->
+        <!-- (checkbox) checkbox ekk widiyata wada karanawa -->
+        <!-- (checked) checkbox eka default checked wela thiyenawa -->
+        <!-- (radio) radio button ekk widiyata wada karanawa -->
+        <!-- (checked) checkbox eka default checked wela thiyenawa -->
+        <!-- (range) rage ekk denna puluwan -->
+        <!-- (color) color picker ekk ganna puluwan -->
+        <!-- (date) date picker ekk ganna puluwan -->
+        <!-- (max) max date ekk denna puluwan -->
+        <!-- (min) minimum date ekk denna puluwan -->
+        <!-- (datetime-local) date ekai time ekai denna puluwan -->
+        <!-- (time) time picker ekk ganna puluwan -->
+        <!-- (month) month picker ekk ganna puluwan -->
+        <!-- (week) week picker ekk ganna puluwan -->
+        <!-- (file) file upload karanna puluwan -->
+        <!-- (image) image ekk load karanna puluwan -->
+        <!-- (button) button ekk ganna puluwan -->
+        <!-- (submit) <form> eka athule thiyena okkoma inputs walin data collect karana api dena thenata a tika set kragena refresh karanawa -->
+        <!-- (reset) enter karapu data tika clear karanawa..<form> eka reset karanawa -->
+        <!-- (hidden) <form> eke innawa eth eliyata penne na -->
+        <!-- (placeholder) input area ekata placeholder(water mark) ekk danna use karanawa....-->
+
+        <input type="text" placeholder="enter your name :"> <br><br>
+        <input type="number" placeholder="enter your age :"> <br><br>
+        <input type="password" placeholder="enter your password :"> <br><br>
+        <input type="email" placeholder="enter your email :"> <br><br>
+        <input type="url" placeholder="enter your website :"> <br><br>
+        <input type="search" placeholder="search :"> <br><br>
+        <input type="tel" placeholder="enter your mobile :"> <br><br>
+        <input type="checkbox" checked> <br><br>
+        <input type="radio" checked> <br><br>
+        <input type="range"> <br><br>
+        <input type="color"> <br><br>
+        <input type="date" max="2025-01-31" min="2024-12-31"> <br><br>
+        <input type="datetime-local"> <br><br>
+        <input type="time"> <br><br>
+        <input type="month"> <br><br>
+        <input type="week"> <br><br>
+        <input type="file"> <br><br>
+        <input type="image" src="../assets/Images/image2.jpg" width="100"> <br><br>  <!-- dn use wenne na -->
+        <input type="button" value="click"> <br><br>   <!-- dn use wenne na -->
+        <input type="submit" value="submit"> <br><br>  <!-- dn use wenne na -->
+        <input type="reset" value="reset"> <br><br>    <!-- dn use wenne na -->
+        <input type="hidden"> <br><br>
+
+    </form>
+
+
+
+
+    <!--(action) form eken ganna data tika send wenna ona khtda kyana eka-->
+    <!--(method) form eken ganna data tika send wenna ona khtda kyana eka-->
+
+    <form action="http://localhost:8080/form" method="post">
+
+
+        <!-- label -->
+
+        <!-- (id) lable eke unique id eka -->
+        <!-- (for) mona label ekada kiayan eke id eka -->
+
+        <div>
+            <label for="first-name">First Name</label><br>
+            <input
+                    type="text"
+                    id="first-name"
+                    placeholder="Enter your first name :"
+                    name="firstname"
+            >
+        </div>
+
+        <br>
+
+        <div>
+            <label for="last-name">Last Name</label><br>
+            <input
+                    type="text"
+                    id="last-name"
+                    placeholder="Enter your last name :"
+                    name="lastname"
+            >
+        </div>
+
+        <br>
+
+
+        <!-- textarea -->
+
+        <!-- (rows) textarea eke rows gana denna puluwan -->
+        <!-- (cols) eka column ekaka ghnn puluwan letters gana -->
+
+        <div>
+            <label for="address">Address</label><br>
+            <textarea
+                    placeholder="Enter your address : "
+                    id="address"
+                    rows="10"
+                    cols="50"
+                    name="address"
+            ></textarea>
+        </div>
+
+        <br>
+
+
+        <!-- select -->
+
+        <div>
+            <label>Select Subject</label><br>
+            <select name="subject">
+                <option value="1">Html</option>
+                <option value="2">CSS</option>
+                <option value="3">Java</option>
+            </select>
+        </div>
+
+        <br>
+
+
+        <!-- radio -->
+
+        <fieldset>
+            <legend>Status</legend>
+            <input type="radio" name="Status" id="status1" value="married"><label for="status1">Married</label><br>
+            <input type="radio" name="Status" id="status2" value="happy"><label for="status2">Still-Happy</label>
+        </fieldset>
+
+        <br>
+
+
+        <!-- datalist -->
+
+        <label for="country">Country</label><br>
+        <input type="text" id="country" list="country-list">
+
+        <datalist id="country-list">
+            <option value="usa">USA</option>
+            <option value="srilanka">SriLanka</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+            <option value="india">India</option>
+        </datalist>
+
+        <br><br>
+
+
+        <!-- optgroup(option group) -->
+
+        <select>
+            <optgroup label="Asia">
+                <option value="srilanka">SriLanka</option>
+                <option value="china">China</option>
+                <option value="japan">Japan</option>
+                <option value="india">India</option>
+            </optgroup>
+
+            <optgroup label="Europe">
+                <option value="uk">Uk</option>
+                <option value="finland">Finland</option>
+                <option value="vineland">Vineland</option>
+                <option value="ireland">Ireland</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+
+        <!-- button -->
+
+<!--        <input type="button" value="click">-->
+<!--        <input type="submit" value="submit">-->
+<!--        <input type="reset" value="reset">-->
+
+        <button type="button">click</button>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+
+        <br><br><br><br>
+
+    </form>
+
+
+    <form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+
+        <!-- <output> -->
+        <!-- form ekk athule collect karaganna data walin yamkisi wdk karala eka eliyata ganna use karanawa..-->
+
+        <input type="range" id="a" name="a"><br>
+        <input type="number" id="b" name="b">
+
+        <output name="result">30</output>
+
+        <br><br><br><br>
+
+    </form>
+
+
+    <form>
+
+        <div>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname" value="Binu">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname" value="jinajith">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="course">Email</label><br>
+                <select id="course" name="course">
+                    <option value="cmjd">CMJD</option>
+                    <option value="gdse">GDSE</option>
+                    <option value="dep" selected>DEP</option>
+                </select>
+        </div>
+
+        <br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

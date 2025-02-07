@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia in Html</title>
+</head>
+<body>
+
+    <!--image-->
+    <!--video -->
+    <!--audio-->
+
+
+    <!--image-->
+
+    <!-- (src) image resource -->
+    <!-- (title) image title -->
+    <!-- (alt) mokakhri hethuwak nisa image eka load kranna barinm meke thiyena text eka display krnawa -->
+
+<!--    <img src="assets/Images/image2.jpg" title="evo" alt="lancer evolution ix" width="800">-->
+<!--    <img src="assets/Images/image2.jpg" title="evo" alt="lancer evolution ix" width="100">-->
+<!--    <img src="assets/Images/image2.jpg" title="evo" alt="lancer evolution ix" width="100">-->
+
+
+    <!-- <picture> -->
+
+    <!-- (srcset) image eke path eka -->
+    <!-- (type) image type eka -->
+    <!-- (media) screen(viewboard) eke width eka kochchara unamada image eka pennanna ona kyana eka -->
+
+<!--    <picture>-->
+<!--        <source media="(min-width:1000px)" srcset="assets/Images/image.jpeg" type="jpg">-->
+<!--        <source media="(min-width:1000px)" srcset="assets/image2.jpeg" type="jpg">-->
+<!--        <img src="assets/Images/image.jpeg" title="levis">-->
+<!--    </picture>-->
+
+
+    <!--video -->
+
+    <!--(controls) video eke controllers tika ganna puluwan -->
+    <!--(autoplay) video eka autoplay wenna danna puluwan -->
+    <!--(muted) video eka autoplay wenna nm vedio eka mute wela thiyenna ona..Controllers nathuwa automatic load wenne..ekata use karanawa -->
+    <!--(loop) video eka loop ekk widiyata eka digata wada karanawa -->
+    <!--(poster) video path eke aulk nisa hari browser eke aulk hari nisa video eka load krganna barinm meken meyata deela thiyena image eka diplay krnawa -->
+    <!--(width) video eke width eka wens karanna puluwan -->
+    <!--(height) video eke height eka wens karanna puluwan -->
+
+    <video src="../assets/Video/car.mp4"
+           controls=""
+           autoplay=""
+           muted=""
+           loop=""
+           poster="../assets/Images/image.jpeg"
+           width="1000px"
+           height="800px"
+    ></video>
+
+    <!--(source) deela thiyena original resource eke type eka browser eke wada karanne nathnm source eken dena anith type eken run karawanawa..source eken types gdk deela thiynna puluwan -->
+    <!--(track) video ekata subtitle add karanna puluwan..subtitles keepayk add krnnath puluwan-->
+    <!--(kind) add kale mokakd kyna eka danna puluwan-->
+    <!--(srclang) video ekata dapu subtitle eke language karanna puluwan -->
+    <!--(label) video ekata dapu subtitle select karanna pennana nama -->
+
+    <video src="../assets/Video/car.mp4"
+           controls=""
+           autoplay=""
+           muted=""
+           loop=""
+           poster="../assets/Images/image.jpeg"
+    >
+        <source src="../assets/Video/car.mp4" type="video/mp4">
+        <source src="../assets/Video/car.webm" type="video/webm">
+        <track src="../assets/Video/Subtitle/sample.vtt" kind="subtitles" srclang="en" label="english">
+        <track src="../assets/Video/Subtitle/arabic.vtt" kind="subtitles" srclang="ar" label="arabic">
+    </video>
+
+
+    <!--Audio -->
+
+    <audio controls>
+        <source src="../assets/Audio/audio_file2.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+</html>

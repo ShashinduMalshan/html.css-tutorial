@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+</head>
+<body>
+    <!--
+        <table> - define table
+        <thead> - define table header
+        <th>    - table head
+        <tbody> - define table body
+        <tr>    - table raw
+        <td>    - table data
+        <caption> - add a caption to the table
+        <tfoot> - define table footer
+    -->
+
+    <table border="1">
+        <caption>Student Table</caption>
+        <thead>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Surname</th>
+            <th>Mobile</th>
+            <th>Address</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kusal</td>
+                <td>Perera</td>
+                <td>+94 2314567</td>
+                <td>Colombo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kusal</td>
+                <td>Mendis</td>
+                <td>+94 1234567</td>
+                <td>Moratuwa</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pathum</td>
+                <td>Nissanka</td>
+                <td>+94 7654321</td>
+                <td>Kaluthara</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>#ID</th>
+            <th>#First Name</th>
+            <th>#Surname</th>
+            <th>#Mobile</th>
+            <th>#Address</th>
+        </tfoot>
+    </table>
+
+
+    <table border="1">
+        <caption>Student Table</caption>
+        <thead>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Surname</th>
+            <th>Mobile 1</th>
+            <th>Mobile 2</th>
+            <th>Address</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kusal</td>
+                <td>Perera</td>
+                <td colspan="2">+94 2314567</td>
+<!--                <td>+94 2314777</td>-->
+                <td>Colombo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kusal</td>
+                <td>Mendis</td>
+                <td>+94 1234567</td>
+                <td>+94 1234555</td>
+                <td>Moratuwa</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pathum</td>
+                <td>Nissanka</td>
+                <td>+94 7654321</td>
+                <td>+94 7654111</td>
+                <td>Kaluthara</td>
+            </tr>
+        </tbody>
+            <tfoot>
+                <th>#ID</th>
+                <th>#First Name</th>
+                <th>#Surname</th>
+                <th>#Mobile 1</th>
+                <th>#Mobile 2</th>
+                <th>#Address</th>
+            </tfoot>
+    </table>
+
+    <table border="1">
+        <caption>Student Table</caption>
+        <thead>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Surname</th>
+            <th>Mobile</th>
+            <th>Address</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kusal</td>
+                <td>Perera</td>
+                <td>+94 2314567</td>
+                <td>Colombo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kusal</td>
+                <td>Mendis</td>
+                <td rowspan="2">+94 1234567</td>
+                <td>Moratuwa</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pathum</td>
+                <td>Nissanka</td>
+<!--                <td>+94 7654321</td>-->
+                <td>Kaluthara</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>#ID</th>
+            <th>#First Name</th>
+            <th>#Surname</th>
+            <th>#Mobile</th>
+            <th>#Address</th>
+        </tfoot>
+    </table>
+
+<table border="1">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th colspan="2">Email</th>
+        <th>Parent's Name</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Kavindu</td>
+            <td>Kavindu1@gmail.com</td>
+            <td>Kavindu2@gmail.com</td>
+            <td>Mr.Rathnayaka</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Janith</td>
+            <td>Janith1@gmail.com</td>
+            <td>Janith2@gmail.com</td>
+            <td>Mr.Sarath</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sheron</td>
+            <td colspan="2">Sheron@gmail.com</td>
+            <td rowspan="2">Mr.Kamal</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Brian</td>
+            <td>Brian1@gmail.com</td>
+            <td>Brian2@gmail.com</td>
+        </tr>
+        <tr>                                                                                      
+            <td>5</td>
+            <td>Vishwa</td>
+            <td>Vishwa1@gmail.com</td>
+            <td>Vishwa2@gmail.com</td>
+            <td>Mr.Nihal</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Saroja</td>
+            <td rowspan="2" colspan="2">Saroja@gmail.com</td>
+            <td rowspan="2">Mr.Nelson</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Sarojini</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
