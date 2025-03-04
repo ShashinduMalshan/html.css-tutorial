@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/lib/normalize.css">
+
+    <style>
+
+        section{
+            position: relative;
+            display: grid;
+            grid-template-columns:repeat(6,  1fr);
+            grid-template-rows:repeat(2,  1fr);
+
+            border:1px solid greenyellow;
+             width:100vw ;
+            gap: 10px;
+
+
+        }
+
+             section > div {
+            background: bisque;
+                    border: 2px solid black;
+                                              height: 500px;
+
+                }
+
+    @media all and (max-width: 1300px) and (min-width: 800px) {
+           section  {
+            grid-template-columns:repeat(3,  1fr);
+        }}
+
+        @media all and (max-width: 800px) and (min-width: 600px) {
+           section  {
+            grid-template-columns:repeat(2,  1fr);
+        }}
+
+        @media all and (max-width: 600px) {
+           section  {
+            grid-template-columns:repeat(1,  1fr);
+        }}
+    </style>
+
+
+
+</head>
+<body>
+<section>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+    </section>
+</body>
+</html>

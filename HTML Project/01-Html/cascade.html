@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade</title>
+
+    <style>
+
+
+           /*value =  0,0,0,0**/
+
+        /*ID selector  - 0,1,0,0*/
+        /*   value =  0,1000,0,0*/
+
+           #my-btn{
+            color: blue;
+        }
+
+        P{ /*!0,0,0,1  */
+
+            color: red;
+        }
+
+        section>.my-class{ section- 0,0,0,1 | >-> 0,0,0,0 | .my-class -> 0,0,1,0*!
+            color: greenyellow;
+        }
+
+
+        .my-class{  ;/*0,0,1,0 */
+            color: blue;
+        }
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+<button  class="my-class" id="my-btn" style="color: red">Click</button><!-- 1,0,0,0 -->
+
+
+
+</body>
+</html>

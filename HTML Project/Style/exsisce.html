@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"></head>
+
+
+    <style>
+
+        header{
+            display: flex;
+            background: lawngreen;
+            position: relative;
+
+        }
+
+        header > nav{
+            display: flex;
+
+
+
+
+         }
+        header > nav > ul > li{
+            position: relative;
+            display: inline;
+
+
+        }
+        button{
+            position: relative;
+            right: 0;
+            display: none;
+        }
+
+     @media all and (max-width:800px){
+
+                     header > nav > ul {
+                         position: absolute;
+                                display: none;
+                         background: black;
+                            }
+                        button{
+                            position: absolute;
+                            display: block;
+
+                        }
+
+    }
+    </style>
+
+</head>
+
+
+<body>
+
+   <header>
+        <img src="../assets/Images/ijse@1x.png" alt="Ijse">
+
+    <nav>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+    </nav>
+       <button>Menu</button>
+   </header>
+</body>
+</html>
