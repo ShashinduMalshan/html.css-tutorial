@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6b499d2a-70d4-459f-8b80-2d07fbc6e729" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HTML Project/Style/Flex-box.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/Style/Flex-box2.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ShashinduMalshan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ShashinduMalshan/html.css-tutorial.git&quot;,
+    &quot;accountId&quot;: &quot;78488fc6-b41b-4097-980e-5f3c457bec93&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HTML Project/01-Html/inheritance.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;040003ff&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2s7MlKvFlxdVR5uzWdYzpRNQMJs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.axssice-3.html.executor": "Run",
+    "JavaScript Debug.box sizing.html.executor": "Run",
+    "JavaScript Debug.cascade.html.executor": "Run",
+    "JavaScript Debug.combinators.html.executor": "Run",
+    "JavaScript Debug.grid-layout.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.multimedia.html.executor": "Run",
+    "JavaScript Debug.posittioning.html.executor": "Run",
+    "JavaScript Debug.traversing.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/shasidu/Documents/ijse/learning projects/HTML Project",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.appearance",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/HTML Project/sample" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/HTML Project/01-Html" />
+      <recent name="$PROJECT_DIR$/HTML Project" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b499d2a-70d4-459f-8b80-2d07fbc6e729" name="Changes" comment="" />
+      <created>1737802311729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737802311729</updated>
+      <workItem from="1737802312980" duration="653000" />
+      <workItem from="1737802979522" duration="799000" />
+      <workItem from="1737828011383" duration="7000" />
+      <workItem from="1737987859293" duration="367000" />
+      <workItem from="1737988305648" duration="358000" />
+      <workItem from="1738380596664" duration="22413000" />
+      <workItem from="1738431857688" duration="16000" />
+      <workItem from="1738462513964" duration="8000" />
+      <workItem from="1738920633933" duration="1312000" />
+      <workItem from="1738938956901" duration="955000" />
+      <workItem from="1738986358920" duration="6550000" />
+      <workItem from="1739001163712" duration="10166000" />
+      <workItem from="1739082657646" duration="975000" />
+      <workItem from="1739590600807" duration="19666000" />
+      <workItem from="1739627982205" duration="1846000" />
+      <workItem from="1739638882051" duration="1522000" />
+      <workItem from="1739680137702" duration="23000" />
+      <workItem from="1739741910936" duration="22000" />
+      <workItem from="1739772948196" duration="38000" />
+      <workItem from="1739773073114" duration="5000" />
+      <workItem from="1739947219419" duration="6000" />
+      <workItem from="1740635668963" duration="5922000" />
+      <workItem from="1740711387617" duration="1245000" />
+      <workItem from="1740723990983" duration="123000" />
+      <workItem from="1740800861822" duration="299000" />
+      <workItem from="1740892544806" duration="11908000" />
+      <workItem from="1741073796581" duration="4613000" />
+      <workItem from="1741145475664" duration="90000" />
+      <workItem from="1741343126247" duration="16000" />
+      <workItem from="1741343150626" duration="30000" />
+      <workItem from="1741343186665" duration="11000" />
+      <workItem from="1741343428514" duration="18000" />
+      <workItem from="1741405405014" duration="2321000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
