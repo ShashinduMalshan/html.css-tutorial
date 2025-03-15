@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        div{
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: red;
+            border: 5px solid green;
+
+            animation-name: my-rotate;
+            animation-duration: 3s;
+
+        }
+
+        @keyframes my-rotate {
+            from{
+                transform: rotate(0deg);
+                background-color: greenyellow;
+            }
+
+            to{
+                transform:rotate(360deg);
+                background-color: deepskyblue;
+                width: 300px;
+                margin-left: 1000px;
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+</body>
+</html>
