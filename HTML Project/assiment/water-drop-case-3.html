@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+        body div:nth-child(2){
+            position: absolute;
+            width: 150px;
+            aspect-ratio: 1/1;
+            border: 3px solid aqua;
+            border-radius: 50%;
+
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+
+            margin: auto;
+            animation-name: my-rotate2;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        body div:first-child{
+            position: absolute;
+            width: 200px;
+            aspect-ratio: 1/1;
+            border: 3px solid aqua;
+            border-radius: 50%;
+
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+
+            margin: auto;
+            animation-name: my-rotate;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+
+
+
+        }
+
+         @keyframes my-rotate {
+            from{
+                width: 200px;
+            }
+
+            to{
+                width: 400px;
+                opacity:0;
+
+            }
+
+
+            }
+             @keyframes my-rotate2{
+                        0%{
+                            width: 150px;
+                        }
+
+                        100%{
+                            width: 350px;
+                            opacity:0;
+
+                        }
+
+
+                        }
+
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+</body>
+</html>
