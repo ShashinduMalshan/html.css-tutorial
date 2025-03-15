@@ -14,19 +14,29 @@
 
             animation-name: my-rotate;
             animation-duration: 3s;
+            /*animation-delay: 2s;*/
+            animation-iteration-count: infinite;
+            /*animation-direction: normal;*/
+            /*animation-direction: reverse;*/
+            /*animation-direction: alternate;*/
+            animation-direction: alternate-reverse;
 
+            /*animation-timing-function: linear;*/
+            /*animation-timing-function: ease;*/
+            /*animation-timing-function: ease-out;*/
+            animation-timing-function: ease-in-out;
         }
 
         @keyframes my-rotate {
             from{
-                transform: rotate(0deg);
+                /*transform: rotate(0deg);*/
                 background-color: greenyellow;
             }
 
             to{
-                transform:rotate(360deg);
+                /*transform:rotate(360deg);*/
                 background-color: deepskyblue;
-                width: 300px;
+                /*width: 300px;*/
                 margin-left: 1000px;
             }
 
