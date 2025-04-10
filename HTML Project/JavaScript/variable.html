@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Data Types</title>
+</head>
+<body>
+    <script>
+        // Demonstrating JavaScript's dynamic typing
+
+        // Variable 'a' initialized as a number
+        var a = 10;
+        console.log(typeof a); // Output: number
+
+        // Variable 'a' reassigned as a string
+        a = "hello";
+        console.log(typeof a); // Output: string
+
+        // Variable 'a' reassigned as a boolean
+        a = true;
+        console.log(typeof a); // Output: boolean
+
+        // Variable 'a' reassigned as null (Note: typeof null returns "object" due to JavaScript's legacy behavior)
+        a = null;
+        console.log(typeof a); // Output: object (JavaScript quirk)
+
+        // Variable 'a' reassigned as undefined
+        a = undefined;
+        console.log(typeof a); // Output: undefined
+
+        // Variable 'a' reassigned as a floating-point number
+        a = 10.25;
+        console.log(typeof a); // Output: number (floating point values are also considered "number")
+
+        // Variable 'a' reassigned as a symbol (used for unique identifiers)
+        a = Symbol('foo');
+        console.log(typeof a); // Output: symbol
+
+        // Variable 'a' reassigned as a very large number
+        a = 10000000000000000000000000000000000000000000;
+        console.log(a); // Output: 1e+43 (scientific notation for large numbers)
+
+        // Defining an object 'y' with properties id, name, and age
+        var y = {
+            id: 1,
+            name: "Shasidu",
+            age: 28
+        };
+        console.log(y); // Output: { id: 1, name: "Shasidu", age: 28 }
+
+        // Defining an array 'z' containing numbers
+        var z = [1, 2, 3, 5, 6, 7];
+        console.log(z); // Output: [1, 2, 3, 5, 6, 7]
+
+        // Checking the type of 'z' (arrays in JavaScript are technically objects)
+        console.log(typeof z); // Output: object (Arrays are a special kind of object)
+
+        // Defining an anonymous function and storing it in a variable
+        var getAge = function () {
+            return 28;
+        };
+        console.log(typeof getAge()); // Output: number (since getAge() returns a number)
+
+        // Defining a named function 'getName' that returns a string
+        function getName() {
+            return "Shasidu";
+        }
+        console.log(getName()); // Output: "Shasidu"
+
+        // Understanding JavaScript hoisting
+        console.log(num1); // Output: undefined (due to hoisting, var is declared but not assigned yet)
+        var num1 = 10; // Variable declaration and initialization
+
+        // Demonstrating various console methods
+        console.log("Hello world"); // Prints a message to the console
+        console.error("Hello world"); // Displays an error message
+        console.warn("Hello world"); // Displays a warning message
+        console.info("Hello world"); // Displays an informational message
+        console.table({ id: 123, name: "Hello world", age: 25 }); // Displays an object in tabular format
+    </script>
+</body>
+</html>

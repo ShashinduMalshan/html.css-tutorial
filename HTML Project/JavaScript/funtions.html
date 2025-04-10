@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    function myFunction(){
+        console.log("Welcome to Function");
+    }
+        myFunction();
+
+    function myFunction2(num1,num2){
+        let sum = num1+num2;
+        console.log(sum);
+        return sum;
+
+    }
+
+    const returnValue =myFunction2(30,95);
+    console.log("returnValue"+returnValue)
+
+
+    function myFunction3(num1,num2){
+        return  num1+num2
+    }
+
+    const myFunction3R=myFunction3();
+    console.log("myFunction3"+myFunction3R)
+
+    const myFunc = () => {
+      console.log("welocome to ijse")
+    }
+
+    myFunc();
+
+    const myFunc2 = (num1,num2,num3) => {
+        return num1 + num2 + num3 ;
+    }
+    let myres= myFunc2(2,2,9);
+    console.log(myres)
+
+    let myFunc3 =new Function("arg1","arg2","return arg1+arg2")
+
+    sum = myFunc3(25,78)
+    console.log(sum)
+
+
+</script>
+</body>
+</html>

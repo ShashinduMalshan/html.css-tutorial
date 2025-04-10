@@ -5,16 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b499d2a-70d4-459f-8b80-2d07fbc6e729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML Project/Style/Flex-box-align-items.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/Style/Flex-box-align-self.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/Style/box-types.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/Style/exsice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/Style/flex exsice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/Style/transform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/Style/transsitin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/assets/Images/icons8-java-144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/String_method.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/dom_Manipulation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/dom_manipulation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/firstJavaScript.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/firstJavaScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/funtions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/if_condition.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/js_oparators.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/loops.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/variable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/Style/z-index/z-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/Car_Animation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/assiment-case-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/boostaps1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/rotateCircle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/slideShow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/boostrap/BoostapTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/boostrap/boostrapContarner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/bootstraps.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Project/Style/Flex-box2.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML Project/Style/Flex-box-justify-content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML Project/assiment/box-moving.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML Project/assiment/box-moving.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +100,7 @@
       <recent name="$PROJECT_DIR$/HTML Project/sample" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/HTML Project/assets" />
       <recent name="$PROJECT_DIR$/HTML Project/01-Html" />
       <recent name="$PROJECT_DIR$/HTML Project" />
     </key>
@@ -144,6 +156,16 @@
       <workItem from="1741405405014" duration="2321000" />
       <workItem from="1741526689703" duration="99000" />
       <workItem from="1741953210468" duration="2612000" />
+      <workItem from="1742041573182" duration="2306000" />
+      <workItem from="1742315337999" duration="8000" />
+      <workItem from="1742614268046" duration="10947000" />
+      <workItem from="1743172131038" duration="10477000" />
+      <workItem from="1743182622930" duration="8000" />
+      <workItem from="1743182656255" duration="65000" />
+      <workItem from="1743182727128" duration="834000" />
+      <workItem from="1743218912522" duration="22000" />
+      <workItem from="1743316566476" duration="12000" />
+      <workItem from="1743824677341" duration="13663000" />
     </task>
     <servers />
   </component>

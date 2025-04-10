@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../assets/lib/normalize.css">
+</head>
+
+    <style>
+        body{
+    background: blue;
+}
+
+body>div{
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body>div:first-child{
+    width: 260px;
+    border-radius: 100%;
+    background-color: grey;
+    z-index: 3;
+    display: flex;
+    /*align-items: center;*/
+    /*justify-items: center;*/
+}
+
+body>div:first-child>p{
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    align-self: center;
+    left: 32%;
+}
+
+body>div:nth-child(2){
+    width: 150px;
+    border-top-left-radius: 100%;
+    background-color: red;
+    top: -150px;
+    left: -150px;
+    z-index: 2;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+}
+
+body>div:nth-child(3){
+    width: 300px;
+    border-radius: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+div:first-child:hover + div {
+    transform: rotate(405deg);
+}
+
+
+
+    </style>
+<body>
+    <div>
+        <p>RWAD</p>
+    </div>
+    <div></div>
+    <div></div>
+</body>
+</html>

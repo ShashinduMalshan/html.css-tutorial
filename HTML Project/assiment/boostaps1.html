@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap exercise</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <style>
+        .topic{
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+<div class="container ">
+  <div class="row">
+    <div class="col-4">
+
+<form>
+    <div class="shadow card mt-5" style="width: 25rem;">
+    <div class="card-body">
+        <div >
+            <h1 class="topic">Students</h1>
+            <label for="formGroupExampleInput" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2">
+        </div>
+
+        <div class="mb-3">
+        <label for="program-input" class="form-label">Program</label>
+        <select id="program-input" class="form-select" aria-label="Default select example">
+            <option selected>Select Program</option>
+            <option value="1">GDSE</option>
+            <option value="2">CMJD</option>
+            <option value="3">DEP</option>
+        </select>
+        </div>
+
+<!--        radio button wala ekama name eka thiyenna ona ekak select unama anika deselect wenna.nathnam dekama select karanna puluwan..-->
+
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="after-al">
+                <label class="form-check-label" for="after-al">
+                    After A/L
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="after-ol" checked>
+                <label class="form-check-label" for="after-ol">
+                    After O/L
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="address-input" class="form-label">Address</label>
+            <textarea class="form-control" id="address-input" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3" id="btn">
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-success">Update</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-warning">Reset</button>
+        </div>
+    </div>
+</div>
+</form>
+
+
+
+
+    </div>
+    <div class="col">
+
+<table class="table m-5">
+    <thead>
+    <tr>
+        <th scope="col">First-Name</th>
+        <th scope="col">Last-Name</th>
+        <th scope="col">Program</th>
+        <th scope="col">Qualification</th>
+        <th scope="col">Address</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>Binu</td>
+        <td>Jinajith</td>
+        <td>GDSE</td>
+        <td>A/L</td>
+        <td>Agalawatta</td>
+    </tr>
+    <tr>
+        <td>Dewmi</td>
+        <td>Chirantha</td>
+        <td>DEP</td>
+        <td>A/L</td>
+        <td>Neboda</td>
+    </tr>
+    <tr>
+        <td>Methmi</td>
+        <td>Shehara</td>
+        <td>CMJD</td>
+        <td>A/L</td>
+        <td>Moragahahena</td>
+    </tr>
+    </tbody>
+</table>    </div>
+
+  </div>
+</div>
+</body>
+</html>

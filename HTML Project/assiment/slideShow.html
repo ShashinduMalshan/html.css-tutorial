@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-05</title>
+    <link rel="stylesheet" href="../assets/lib/normalize.css">
+    <style>
+        * {
+            overflow: hidden;
+        }
+        section {
+            position: absolute;
+            width: 400vw;
+            height: 200vh;
+            display: flex;
+            animation-name: move-background;
+            animation-duration: 5s; /* Total animation duration (10s per image × 4 images) */
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+        @keyframes move-background {
+            0% {
+                margin-left: 0; /* First image */
+            }
+            25% {
+                margin-left: 0; /* Hold first image for 25% (10s) */
+            }
+            25.01% {
+                margin-left: -100vw; /* Move to the second image */
+            }
+            50% {
+                margin-left: -100vw; /* Hold second image for 25% (10s) */
+            }
+            50.01% {
+                margin-left: -200vw; /* Move to the third image */
+            }
+            75% {
+                margin-left: -200vw; /* Hold third image for 25% (10s) */
+            }
+            75.01% {
+                margin-left: -300vw; /* Move to the fourth image */
+            }
+            100% {
+                margin-left: -300vw; /* Hold fourth image for 25% (10s) */
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div> <img src="../assets/Images/slide1.jpeg" alt="slide-1"> </div>
+    <div><img src="../assets/Images/slide2.jpeg" alt="slide-2"></div>
+    <div><img src="../assets/Images/slide3.jpeg" alt="slide-3"></div>
+    <div><img src="../assets/Images/slide4.jpeg" alt="slide-4"></div>
+</section>
+</body>
+</html>

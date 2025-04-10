@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- This tells the browser that the document is an HTML5 file -->
+
+<html lang="en">
+<!-- Root element with language set to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 -->
+
+    <title>Title</title>
+    <!-- Title of the web page (shown in tab) -->
+</head>
+
+<body>
+
+<script>
+    // Creating an array with multiple data types (numbers, string, boolean, function, object)
+    let arr=[1,12,1,54,7,6,"Hello",true,function (){}, {name:"shasidu,institute:Ijse"}];
+
+    console.log(arr)  // Displaying array 'arr' in console
+
+    // Creating another array with numbers, string, and nested array
+    let arr2 =[1,2,"hello",[true,false]];
+
+    console.log(arr2)  // Displaying array 'arr2' in console
+
+    // Creating array 'arr3' with various data types including function and object
+    let arr3 = [1, 12, 1, 54, 7, 6, "Hello", true, function () {
+        console.log("This is a function inside array");  // Function prints a message
+    }, {name:"shasidu", institute:"IJSE"}];  // Object with properties
+
+    console.log(arr3)  // Displaying array 'arr3' in console
+
+    // Creating array 'arr4' with only numbers
+    let arr4 = [1, 12, 1, 54, 7, 6];
+    console.log(arr4[4]);  // Printing element at index 4 (which is 7)
+
+    arr4[4]=10;  // Changing the value at index 4 to 10
+    console.log(arr4[4]);  // Printing updated value at index 4 (which is now 10)
+
+    arr3[2]="hi";  // Changing the value at index 2 of array 'arr3' to "hi"
+    console.log(arr3)  // Displaying the updated array 'arr3' in console
+
+
+</script>
+
+</body>
+</html>

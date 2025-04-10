@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Declare variable a and assign value 3
+    let a = 3;
+
+    // Declare variable b and assign value 2
+    let b = 2;
+
+    // Declare variable c and assign value 6
+    let c = 6;
+
+
+
+    // =============================
+    // Arithmetic Operators Example
+    // =============================
+
+
+    // Addition of a and b (3 + 2 = 5)
+    console.log(a + b);
+
+    // Subtraction of a and b (3 - 2 = 1)
+    console.log(a - b);
+
+    // Multiplication of a and b (3 * 2 = 6)
+    console.log(a * b);
+
+    // Division of a by b (3 / 2 = 1.5)
+    console.log(a / b);
+
+    // Modulus of a by b (remainder of 3 / 2 = 1)
+    console.log(a % b);
+
+    // Exponentiation of a to the power of b (3^2 = 9)
+    console.log(a ** b);
+
+
+
+    // =============================
+    // Assignment Operators Example
+    // =============================
+
+    // Simple Assignment Operator (=)
+    let x = 10;  // Assign 10 to x
+    console.log(x);  // Output: 10
+
+    // Addition Assignment Operator (+=)
+    x += 5;  // x = x + 5 --> 10 + 5 = 15
+    console.log(x);  // Output: 15
+
+    // Subtraction Assignment Operator (-=)
+    x -= 3;  // x = x - 3 --> 15 - 3 = 12
+    console.log(x);  // Output: 12
+
+    // Multiplication Assignment Operator (*=)
+    x *= 2;  // x = x * 2 --> 12 * 2 = 24
+    console.log(x);  // Output: 24
+
+    // Division Assignment Operator (/=)
+    x /= 4;  // x = x / 4 --> 24 / 4 = 6
+    console.log(x);  // Output: 6
+
+    // Modulus Assignment Operator (%=)
+    x %= 5;  // x = x % 5 --> 6 % 5 = 1
+    console.log(x);  // Output: 1
+
+    // Exponentiation Assignment Operator (**=)
+    x **= 3;  // x = x ** 3 --> 1^3 = 1
+    console.log(x);  // Output:
+
+
+    // =============================
+    // Comparison Operators Example
+    // =============================
+
+    let p = 5;
+    let q = 10;
+
+    console.log(p == q);   // Equal to --> false
+    console.log(p != q);   // Not Equal to --> true
+    console.log(p > q);    // Greater than --> false
+    console.log(p < q);    // Less than --> true
+    console.log(p >= q);   // Greater than or Equal to --> false
+    console.log(p <= q);   // Less than or Equal to --> true
+    console.log(p === q);  // Strict Equal (check value & type) --> false
+    console.log(p !== q);  // Strict Not Equal (check value & type) --> true
+
+      // == vs === Example
+    console.log(3 == "3");   // true (only value checked)
+    console.log(3 === "3");  // false (value same but type different)
+
+
+    console.log(a < b);  // true  (less than)
+    console.log(a > b);  // false (greater than)
+
+
+    // =============================
+    // Logical Operators Example
+    // =============================
+
+    // Logical AND (&&)
+    // True only if both conditions are true
+    console.log(a < b && b < c);  // true  (10<20 AND 20<30)
+
+    console.log(a > b && b < c);  // false (10>20 false AND 20<30 true)
+
+    // Logical OR (||)
+    // True if any one condition is true
+    console.log(a > b || b < c);  // true (10>20 false OR 20<30 true)
+
+    console.log(a > b || b > c);  // false (10>20 false OR 20>30 false)
+
+
+
+    // =============================
+    // Bitwise Operators Example
+    // =============================
+
+    let n = 5;  // Binary: 0101
+    let m = 3;  // Binary: 0011
+
+    console.log("Bitwise Operators:");
+
+    console.log(n & m);  // Bitwise AND: 0101 & 0011 = 0001 (1)
+    console.log(n | m);  // Bitwise OR:  0101 | 0011 = 0111 (7)
+    console.log(n ^ m);  // Bitwise XOR: 0101 ^ 0011 = 0110 (6)
+    console.log(~n);     // Bitwise NOT: ~0101 = 1010 (-6) (Inverts all bits)
+    console.log(n << 1); // Bitwise Left Shift: 0101 << 1 = 1010 (10)
+    console.log(n >> 1); // Bitwise Right Shift: 0101 >> 1 = 0010 (2)
+    console.log(!n); // Bitwise Right Shift: 0101 >> 1 = 0010 (2)
+    console.log(!m); // Bitwise Right Shift: 0101 >> 1 = 0010 (2)
+
+    // =============================
+    // Unary Operators Example
+    // =============================
+    let y = 5;
+
+    console.log("Unary Operators:");
+
+    // Unary plus (+): Converts operand to a number.
+    console.log(+y);   // 5
+
+    // Unary minus (-): Converts operand to a negative number.
+    console.log(-y);   // -5
+
+    // Increment (++) Operator: Increases operand by 1.
+    console.log(++y);  // 6 (pre-increment)
+
+    // Decrement (--) Operator: Decreases operand by 1.
+    console.log(--y);  // 5 (pre-decrement)
+
+    // Logical NOT (!): Converts operand to boolean and negates.
+    console.log(!true); // false
+    console.log(!false); // true
+
+
+
+
+</script>
+
+</body>
+</html>
