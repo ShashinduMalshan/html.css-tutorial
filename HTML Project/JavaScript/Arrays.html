@@ -42,6 +42,92 @@
     arr3[2]="hi";  // Changing the value at index 2 of array 'arr3' to "hi"
     console.log(arr3)  // Displaying the updated array 'arr3' in console
 
+    console.log(arr4.length);  // Printing the length of the array 'arr4' (number of elements)
+
+
+    // Using a for loop to print each element of the array 'arr4'
+    for(let i=0; i < arr4.length; i++){
+        console.log(arr4[i]);  // Printing element at index 'i'
+    }
+
+    console.log(arr4);  // Printing the entire array 'arr4'
+    arr4.push('a');  // Adding a new element 'a' to the end of array 'arr4'
+    console.log(arr4);  // Printing the updated array 'arr4' with new element
+
+
+    console.log(arr4.pop());  // Removes and prints the last element from array 'arr4'
+    console.log(arr4.pop());  // Again removes and prints the last element from updated 'arr4'
+    console.log(arr4.pop());  // Removes and prints the last element one more time
+    console.log(arr4);  // Prints the remaining elements of array 'arr4' after pop operations
+
+
+    console.log(arr4.shift());  // Removes and prints the first element from array 'arr4'
+    console.log(arr4);  // Prints the updated array 'arr4' after removing the first element
+
+    console.log(arr4.unshift("Helle"));  // Adds "Helle" to the beginning of array 'arr4' and prints the new length of the array
+    console.log(arr4);  // Prints the updated array 'arr4' after adding "Helle" at the beginning
+    console.log(arr4.unshift(true));  // Adds "true" to the beginning of array 'arr4' and prints the new length of the array
+
+    let arr5 = [100, 200, 400, 500, 9, 400];  // Array of numbers
+    let arr6 = ["Hello", "A", "B", "C", "D"];  // Array of strings
+    console.log(arr5.concat(arr6));  // Combines 'arr5' and 'arr6' and prints the resulting array
+
+
+    let x = [100, 200, 400, 500, 9, 400];  // Initializing array 'x'
+    let y = x;  // Assigning 'x' to 'y', meaning 'y' references the same array as 'x'
+    y[0] = 105;  // Modifying the first element of array 'y'
+
+    console.log(y);  // Prints the modified 'y', which will show [105, 200, 400, 500, 9, 400]
+    console.log(x);  // Prints the original array 'x', which also reflects the change due to reference sharing
+
+    let z = [100, 200, 400, 500, 9, 400];  // Initializing a new array 'z'
+    let l = z.slice();  // Creating a shallow copy of 'z' using slice() (copy by value)
+    l[0] = 105;  // Modifying the first element of array 'l'
+
+    console.log(z);  // Prints the original array 'z', which remains unchanged: [100, 200, 400, 500, 9, 400]
+    console.log(l);  // Prints the modified array 'l', which shows [105, 200, 400, 500, 9, 400]
+
+    let A = [100, 200, 300, 400, 500, 600, 700, 800, 900];  // Initializing the array A
+    console.log(A);  // Prints the original array A: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+
+    let z200 = A.slice(2, 5);  // Extracts elements from index 2 to index 4 (end index 5 is exclusive)
+    console.log(z200);  // Prints the sliced array: [300, 400, 500]
+
+    let z300 = A.slice(-2);  // Extracts the last two elements of the array
+    console.log(z300);  // Prints the sliced array: [800, 900]
+
+    let z400 = A.slice(-5);  // Extracts the last five elements of the array (starting from index -5)
+    console.log(z400);  // Prints the sliced array: [500, 600, 700, 800, 900]
+
+    let z500 = A.slice(5);  // Extracts elements starting from index 5 to the end of the array
+    console.log(z500);  // Prints the sliced array: [600, 700, 800, 900]
+
+    let z600 = A.slice(-3);  // Extracts the last three elements of the array
+    console.log(z600);  // Prints the sliced array: [700, 800, 900]
+
+
+    let B = [100, 200, 300, 400, 500, 600, 700, 800, 900];  // Initializing the array B
+    console.log(B);  // Prints the original array B: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+
+    B.splice(6);  // Removes all elements starting from index 6 to the end of the array
+    console.log(B);  // Prints the array after removing elements from index 6 onward: [100, 200, 300, 400, 500, 600]
+
+    B.splice(2, 2);  // Removes 2 elements starting from index 2
+    console.log(B);  // Prints the array after removing elements from index 2 onward: [100, 200, 600]
+
+    B = [100, 200, 300, 400, 500, 600, 700, 800, 900];  // Initializing the array B
+    console.log(B);  // Prints the original array B: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+    console.log(B.reverse());  // Reverses the array and prints it: [900, 800, 700, 600, 500, 400, 300, 200, 100]
+
+    let C = [500, 20, 800, 300, 100, 6, 400, 900, 700];  // Initializing array C
+    console.log(C);  // Prints the original array C: [500, 20, 800, 300, 100, 6, 400, 900, 700]
+
+    console.log(C.sort());  // Sorts the array C as strings and prints it: [100, 20, 300, 400, 500, 6, 700, 800, 900]
+
+    console.log(C.sort((a,b) => a - b));  // Sorts the array C in ascending order based on numbers
+    console.log(C.sort((a,b) => b - a));  // Sorts the array C in descending order based on numbers
+
+
 
 </script>
 
