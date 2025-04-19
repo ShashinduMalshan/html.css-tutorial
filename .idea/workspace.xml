@@ -5,27 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b499d2a-70d4-459f-8b80-2d07fbc6e729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/String_method.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/dom_Manipulation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/dom_manipulation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/firstJavaScript.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/firstJavaScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/funtions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/if_condition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/js_oparators.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/loops.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/variable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/Style/z-index/z-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/Car_Animation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/assiment-case-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/boostaps1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/rotateCircle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/assiment/slideShow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/boostrap/BoostapTable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/boostrap/boostrapContarner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/bootstraps.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/css_js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/jQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/timers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/trversing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/assets/lib/jquery-3.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/js_assingment/8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/js_assingment/8_two.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/js_assingment/9.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Project/assiment/box-moving.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML Project/assiment/box-moving.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML Project/JavaScript/Arrays.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML Project/JavaScript/Arrays.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +59,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.9.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.axssice-3.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.box sizing.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.cascade.html.executor&quot;: &quot;Run&quot;,
@@ -83,20 +73,25 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/shasidu/Documents/ijse/learning projects/HTML Project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/shasidu/Documents/ijse/learning projects/HTML Project/HTML Project/assets/lib&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/HTML Project/assets/lib" />
       <recent name="$PROJECT_DIR$/HTML Project/sample" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -105,11 +100,21 @@
       <recent name="$PROJECT_DIR$/HTML Project" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="9.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HTML Project/HTML Project/js_assingment/9.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.9.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
       </set>
     </attachedChunks>
   </component>
@@ -166,6 +171,11 @@
       <workItem from="1743218912522" duration="22000" />
       <workItem from="1743316566476" duration="12000" />
       <workItem from="1743824677341" duration="13663000" />
+      <workItem from="1744255033273" duration="25968000" />
+      <workItem from="1744380396979" duration="14192000" />
+      <workItem from="1744594401045" duration="14000" />
+      <workItem from="1745032346643" duration="5261000" />
+      <workItem from="1745069525510" duration="354000" />
     </task>
     <servers />
   </component>

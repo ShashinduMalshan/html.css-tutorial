@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Declares this is an HTML5 document -->
+
+<html lang="en">
+<!-- HTML root element with language set to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 -->
+
+    <title>Title</title>
+    <!-- Title of the web page (shows in browser tab) -->
+</head>
+
+<body>
+
+<section>
+  <!-- Section element to group content -->
+
+  <ul>
+    <!-- Unordered list -->
+    <li>FrontEnd</li>  <!-- First list item -->
+    <li>BackEnd</li>   <!-- Second list item -->
+    <li>               <!-- Third list item (contains ordered list inside) -->
+      <ol>
+        <!-- Ordered list -->
+        <li>SL</li>    <!-- First item in ordered list -->
+        <li>UK</li>    <!-- Second item in ordered list -->
+        <li>USA</li>   <!-- Third item in ordered list -->
+      </ol>
+    </li>
+  </ul>
+
+</section>
+
+<script src="../assets/lib/jquery-3.7.1.min.js"></script>
+<script>
+
+// Get all <li> elements in the document
+document.getElementsByTagName("li")
+
+// Get the 3rd <li> element (index 2)
+document.getElementsByTagName("li")[2]
+
+// Get parent element of 2nd <li> (index 1) => its parent is <ul>
+document.getElementsByTagName("li")[1].parentElement
+
+// Get parent element of 6th <li> (index 5) => its parent is <ol>
+document.getElementsByTagName("li")[5].parentElement
+
+// Get all children of the first <ol> (which is inside 3rd <li>)
+document.getElementsByTagName("ol")[0].children
+
+// Get first child of the <ol> (index 0) => SL
+document.getElementsByTagName("ol")[0].children[0]
+
+// Get third child of the <ol> (index 2) => USA
+document.getElementsByTagName("ol")[0].children[2]
+
+// Get last child element of the <ol> => USA
+document.getElementsByTagName("ol")[0].lastElementChild
+
+
+
+// This line accesses the first <li> of the last <ol> inside the third <li> in the <ul> and gets the first child (SL)
+document.getElementsByTagName("ul")[0].lastElementChild.firstElementChild.children[0]
+
+
+    // Selects all ancestors of <ol>
+    console.log($('ol').parents());
+
+    // Selects only <section> as it's the ancestor of <ol>
+    console.log($('ol').parents('section'));
+
+    // Selects all ancestors up to <section> but not including it
+    console.log($('ol').parentsUntil('section'));
+
+
+
+    // Selects all direct children of <ul>
+    console.log($('ul').children());
+
+    // Selects the third child of <ul> (which is the <li> containing the <ol>)
+    console.log($('ul').children().eq(2));
+
+    // Selects the second child inside the <ol> of the third child of <ul> (which is 'UK')
+    console.log($('ul').children().eq(2).children().eq(1));
+
+
+
+
+</script>
+
+</body>
+</html>

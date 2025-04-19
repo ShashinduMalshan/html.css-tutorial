@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Knight Rider Light</title>
+  <style>
+    body {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .box {
+      display: flex;
+      gap: 5px;
+    }
+
+    .light {
+      width: 100px;
+      height: 50px;
+      background-color: #111; /* Dark by default */
+      transition: background-color 0.2s;
+    }
+
+    .active { background-color: red; }
+    .trail1 { background-color: #cc0000; }
+    .trail2 { background-color: #990000; }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="lightBox">
+  <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+  </div>
+
+  <script>
+    let lights = document.querySelectorAll('.light');
+
+    let current = 0;
+    let direction = 1;
+
+    function updateLights() {
+      for (let i = 0; i < lights.length; i++) {
+        lights[i].className = 'light';
+      }
+
+      if (current > 0) {
+        lights[current - 1].classList.add('trail2');
+      }
+
+      lights[current].classList.add('active');
+
+      if (current < lights.length - 1) {
+        lights[current + 1].classList.add('trail1');
+      }
+
+      current = current + direction;
+
+      if (current === 0 || current === lights.length - 1) {
+        direction = direction * -1;
+      }
+    }
+
+    setInterval(updateLights, 100);
+  </script>
+
+</body>
+</html>

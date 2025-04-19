@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Design</title>
+
+    <style>
+        body{
+            position: relative;
+            background: #1D3F43;
+        }
+        section {
+            position: relative;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+            margin-top: 40vh;
+        }
+
+        .box {
+            width: 150px;
+            height: 74px;
+            border-radius: 24px;
+            background: black;
+        }
+
+       section > :first-child{
+            margin-top: -11vh;
+
+        }
+
+       section > :last-child{
+            margin-top: 11vh;
+
+        }
+
+       .line{
+           position: absolute;
+           background: black;
+            width: 1000px;
+            height: 3px;
+            left: 50%;
+            transform: translateX(-50%);
+
+       }
+
+       body > :nth-child(2){
+           top:-8px;
+
+       }
+       body > :nth-child(3){
+           top:79px;
+
+       }
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+</section>
+
+    <div class="line"></div>
+    <div class="line"></div>
+
+
+<script>
+     let data = ['red','green','blue','pink','yellow','white'];
+
+    const updateLetters = () =>{
+
+        let lastLetter = data.pop();
+        data.unshift(lastLetter)
+
+        data.map((item , index) => {
+        document.getElementsByTagName('div')[index].style.background = item;
+
+        });
+
+        //
+        // document.getElementsByTagName('div')[0].innerText = data[0];
+        // document.getElementsByTagName('div')[1].innerText = data[1];
+        // document.getElementsByTagName('div')[2].innerText = data[2];
+        // document.getElementsByTagName('div')[3].innerText = data[3];
+        // document.getElementsByTagName('div')[4].innerText = data[4];
+        // document.getElementsByTagName('div')[5].innerText = data[5];
+
+    }
+
+    setInterval(updateLetters ,300)
+
+</script>
+</body>
+</html>
