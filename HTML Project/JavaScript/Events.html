@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(145deg, #6366f1, #8b5cf6);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1),
+                        0 10px 15px rgba(99, 102, 241, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 2rem;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hello</h1>
+<button>Click Me</button>
+<div></div><br><br><br>
+
+<input type="text" id="myInput">
+<br>
+<br>
+<input type="text" id="myInput2">
+<br><br>
+<button type="text" id="enter">enter</button>
+<button type="text" id="reset">reset</button>
+<input type="text" id="myInput3">
+<br>
+<br>
+<div></div><br>
+
+<br>
+<button type="text" id="myInput4">Jquery</button>
+
+
+<script src="../assets/lib/jquery-3.7.1.min.js"></script>
+<script>
+    // Get the first button element
+    let btn = document.getElementsByTagName("button")[0];
+
+    // Adds a click event listener to the button. Logs "Hello" when the button is clicked once.
+    btn.addEventListener("click", function handleClick() {
+        console.log("Hello");
+    });
+
+    // Adds a double-click event listener to the button. Logs "machan" when the button is double-clicked.
+    btn.addEventListener("dblclick", () => {
+        console.log("machan");
+    });
+
+    // Adds a mousedown event listener to the button. Logs "mouseDown" when the mouse button is pressed down.
+    btn.addEventListener("mousedown", () => {
+        console.log("mouseDown");
+    });
+
+    // Adds a mouseup event listener to the button. Logs "mouse up" when the mouse button is released.
+    btn.addEventListener("mouseup", () => {
+        console.log("mouse up");
+    });
+
+    // Get the first div element
+    let div_element = document.getElementsByTagName("div")[0];
+
+    // Adds mouseover event to the div. Logs "mouse over" when the cursor enters the div.
+    div_element.addEventListener("mouseover", () => {
+        console.log("mouse over");
+    });
+
+    // Adds mouseout event to the div. Logs "mouse out" when the cursor leaves the div.
+    div_element.addEventListener("mouseout", () => {
+        console.log("mouse out");
+    });
+
+    // Adds mousemove event to the div. Logs "mouse move" continuously while the cursor moves inside the div.
+    div_element.addEventListener("mousemove", () => {
+        console.log("mouse move");
+    });
+
+    // Adds keydown event to the first input. Logs "key down" when a key is pressed down.
+    document.getElementById("myInput").addEventListener("keydown", () => {
+        console.log("key down");
+    });
+
+    // Adds keyup event to the first input. Logs "key up" when a key is released.
+    document.getElementById("myInput").addEventListener("keyup", () => {
+        console.log("key up");
+    });
+
+    // Adds keypress event to the first input. Logs "keyPress" when a key is pressed (only for character-producing keys).
+    document.getElementById("myInput").addEventListener("keypress", () => {
+        console.log("keyPress");
+    });
+
+    // This code listens for input changes in the text field with ID "myInput3".
+    // As the user types, it logs the value and updates the text of the first <h1> element in real time.
+    document.getElementById("myInput3").addEventListener("input", function (e)  {
+        console.log("inout key" + e.target.value);
+        document.getElementsByTagName("h1")[0].innerText = e.target.value;
+    });
+
+    // Get the 'enter' button by its correct ID
+    let enterBtn = document.getElementById("enter");
+
+    // Adds click event listener to the enter button. Logs the value of the input with ID "myInput2" when clicked.
+    enterBtn.addEventListener("click", function () {
+        let value = document.getElementById("myInput3").value;
+        console.log(value);
+    });
+
+    // Get the 'reset' button by its correct ID
+    let resetBtn = document.getElementById("reset");
+
+    // Adds click event listener to the reset button. Clears the input field "myInput2" and logs the empty string.
+    resetBtn.addEventListener("click", function () {
+        let value = document.getElementById("myInput3").value = "";
+        console.log(value);
+    });
+
+
+/**
+ * =====================================================
+ * jQuery DOM Event Handling Demo
+ * =====================================================
+ * This script demonstrates how to use jQuery to handle
+ * various DOM events such as:
+ *   - Mouse events (click, dblclick, mousedown, mouseup)
+ *   - Keyboard events (keydown, keyup, keypress)
+ *   - Input and text update events
+ *   - Realtime input feedback to an <h1> element
+ *   - Button interactions like enter and reset
+ *
+ * Author: [Your Name]
+ * Date: [Current Date]
+ * Dependencies: jQuery 3.7.1
+ * =====================================================
+ */
+
+
+     $(document).ready(function () {
+        // Single click event
+        $("#myInput4").on("click", function () {
+            console.log("Hello");
+        });
+
+        // Double click event
+        $("#myInput4").on("dblclick", function () {
+            console.log("machan");
+        });
+
+        // Mouse down event
+        $("#myInput4").on("mousedown", function () {
+            console.log("mouseDown");
+        });
+
+        // Mouse up event
+        $("#myInput4").on("mouseup", function () {
+            console.log("mouse up");
+        });
+
+        // Mouse over on div
+        $("div:eq(1)").on("mouseover", function () {
+            console.log("mouse over");
+        });
+
+        // Mouse out on div
+        $("div:eq(1)").on("mouseout", function () {
+            console.log("mouse out");
+        });
+
+        // Mouse move on div
+        $("div:eq(1)").on("mousemove", function () {
+            console.log("mouse move");
+        });
+
+        // Keyboard events on #myInput
+        $("#myInput").on("keydown", function () {
+            console.log("key down");
+        });
+
+        $("#myInput").on("keyup", function () {
+            console.log("key up");
+        });
+
+        $("#myInput").on("keypress", function () {
+            console.log("keyPress");
+        });
+
+        // Input event on #myInput3 (real-time text update)
+        $("#myInput3").on("input", function () {
+            console.log("inout key" + $(this).val());
+            $("h1").first().text($(this).val());
+        });
+
+        // Click event on enter button
+        $("#enter").on("click", function () {
+            let value = $("#myInput2").val();
+            console.log(value);
+        });
+
+        // Click event on reset button
+        $("#reset").on("click", function () {
+            $("#myInput2").val("");
+            console.log("");
+        });
+    });
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

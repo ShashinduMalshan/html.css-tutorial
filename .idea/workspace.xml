@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b499d2a-70d4-459f-8b80-2d07fbc6e729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/css_js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/jQuery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/timers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/trversing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/assets/lib/jquery-3.7.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/js_assingment/8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/js_assingment/8_two.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML Project/js_assingment/9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/JavaScript/Events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Project/js_assingment/a.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Project/JavaScript/Arrays.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML Project/JavaScript/Arrays.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML Project/js_assingment/9.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML Project/js_assingment/9.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +169,10 @@
       <workItem from="1744380396979" duration="14192000" />
       <workItem from="1744594401045" duration="14000" />
       <workItem from="1745032346643" duration="5261000" />
-      <workItem from="1745069525510" duration="354000" />
+      <workItem from="1745069525510" duration="569000" />
+      <workItem from="1745070530750" duration="400000" />
+      <workItem from="1745077517323" duration="2045000" />
+      <workItem from="1745467619147" duration="842000" />
     </task>
     <servers />
   </component>

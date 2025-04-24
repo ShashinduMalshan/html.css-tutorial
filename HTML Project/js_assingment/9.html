@@ -20,19 +20,22 @@
     .light {
       width: 100px;
       height: 50px;
-      background-color: #111; /* Dark by default */
+      background-color: #111;
       transition: background-color 0.2s;
     }
 
-    .active { background-color: red; }
-    .trail1 { background-color: #cc0000; }
-    .trail2 { background-color: #990000; }
+    .active  { background-color: #330000; }
+    .trail1  { background-color: #660000; }
+    .trail2  { background-color: #990000; }
+    .trail3  { background-color: #cc0000; }
+    .trail4  { background-color: #ff0000; }
+    .trail5  { background-color: #ff4d4d; }
+    .trail6  { background-color: #ff9999; }
   </style>
 </head>
 <body>
 
   <div class="box" id="lightBox">
-  <div class="light"></div>
     <div class="light"></div>
     <div class="light"></div>
     <div class="light"></div>
@@ -40,33 +43,35 @@
     <div class="light"></div>
     <div class="light"></div>
     <div class="light"></div>
+
   </div>
 
   <script>
     let lights = document.querySelectorAll('.light');
-
     let current = 0;
     let direction = 1;
 
     function updateLights() {
-      for (let i = 0; i < lights.length; i++) {
-        lights[i].className = 'light';
-      }
+      // Clear all lights
+      lights.forEach(light => light.className = 'light');
 
-      if (current > 0) {
-        lights[current - 1].classList.add('trail2');
-      }
+      // Add main active light
+      if (lights[current]) lights[current].classList.add('active');
 
-      lights[current].classList.add('active');
+      // Add trails before
+      if (lights[current - 1]) lights[current - 1].classList.add('trail1');
+      if (lights[current - 2]) lights[current - 2].classList.add('trail2');
+      if (lights[current - 3]) lights[current - 3].classList.add('trail3');
 
-      if (current < lights.length - 1) {
-        lights[current + 1].classList.add('trail1');
-      }
+      // Add trails after
+      if (lights[current + 1]) lights[current + 1].classList.add('trail4');
+      if (lights[current + 2]) lights[current + 2].classList.add('trail5');
+      if (lights[current + 3]) lights[current + 3].classList.add('trail6');
 
-      current = current + direction;
+      current += direction;
 
       if (current === 0 || current === lights.length - 1) {
-        direction = direction * -1;
+        direction *= -1;
       }
     }
 

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
+    <style>
+        :root {
+            --sidebar-bg: #1e2a3a;
+            --sidebar-text: #ffffff;
+            --primary-color: #6c5ce7;
+            --secondary-color: #e84393;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f6fa;
+        }
+
+        .sidebar {
+            background-color: var(--sidebar-bg);
+            color: var(--sidebar-text);
+            height: 100vh;
+            position: fixed;
+            padding-top: 20px;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .sidebar-menu li {
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 8px 0;
+            transition: all 0.3s;
+        }
+
+        .sidebar-menu li:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar-menu li.active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar-menu i {
+            margin-right: 10px;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .stats-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            height: 100%;
+        }
+
+        .stats-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .stats-card p {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .sales-graph {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-top: 20px;
+        }
+
+        .sales-graph h5 {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Fake graph using CSS */
+        .graph-container {
+            height: 200px;
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .graph-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            border-top: 3px solid #3498db;
+            border-radius: 50% 50% 0 0;
+        }
+
+        .graph-line:before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(transparent, rgba(52, 152, 219, 0.1));
+        }
+
+        .time-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .time-label {
+            font-size: 0.8rem;
+            color: #6c757d;
+            text-align: center;
+        }
+
+        .progress-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(
+                var(--primary-color) 0% 72%,
+                var(--secondary-color) 72% 100%
+            );
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .progress-circle::before {
+            content: '';
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            background: white;
+            border-radius: 50%;
+            top: 20px;
+            left: 20px;
+        }
+
+        .progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .progress-label {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+
+        .orders-table {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-top: 20px;
+        }
+
+        .orders-table h5 {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .table {
+            font-size: 0.9rem;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #dfe6e9;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--sidebar-bg);
+        }
+
+        .user-name {
+            font-size: 0.9rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .target-info {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .target-info:last-child {
+            border-bottom: none;
+        }
+
+        .target-label {
+            color: #6c757d;
+        }
+
+        .target-value {
+            font-weight: 600;
+        }
+
+        .target-value.remaining {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 992px) {
+            .sidebar {
+                width: 80px;
+                text-align: center;
+            }
+
+            .sidebar-menu span {
+                display: none;
+            }
+
+            .sidebar-menu i {
+                margin-right: 0;
+                font-size: 1.2rem;
+            }
+
+            .user-profile {
+                flex-direction: column;
+            }
+
+            .user-name {
+                display: none;
+            }
+
+            .main-content {
+                margin-left: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="user-avatar">S</div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="active">
+                    <i class="fas fa-th-large"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <span>Customers</span>
+                </li>
+                <li>
+                    <i class="fas fa-box"></i>
+                    <span>Inventory</span>
+                </li>
+                <li>
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Order</span>
+                </li>
+                <li>
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </li>
+            </ul>
+
+            <div class="user-profile">
+                <div class="user-avatar">S</div>
+                <div class="user-name">Shasidu Malshan</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container-fluid">
+            <!-- Header -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2>Welcome back, Shasidu!</h2>
+                    <p class="text-muted">Here's what's happening with your store today.</p>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <p>Today's Sales</p>
+                        <h2>RS 1,458.25</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <p>Today's Orders</p>
+                        <h2>24</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <p>Items Sold</p>
+                        <h2>87</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <p>New Customers</p>
+                        <h2>8</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sales Graph -->
+            <div class="row mt-4">
+                <div class="col-md-8">
+                    <div class="sales-graph">
+                        <h5>Sales Overview</h5>
+                        <!-- Fake graph using CSS -->
+                        <div class="graph-container">
+                            <div class="graph-line"></div>
+                        </div>
+                        <div class="time-labels">
+                            <div class="time-label">8 am</div>
+                            <div class="time-label">10 am</div>
+                            <div class="time-label">12 pm</div>
+                            <div class="time-label">2 pm</div>
+                            <div class="time-label">4 pm</div>
+                            <div class="time-label">6 pm</div>
+                        </div>
+                    </div>
+
+                    <!-- Orders Table -->
+                    <div class="orders-table">
+                        <h5>Recent Order</h5>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Order id</th>
+                                        <th>Customer</th>
+                                        <th>Time</th>
+                                        <th>Item</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0007</td>
+                                        <td>Sarah Doe</td>
+                                        <td>10:24 AM</td>
+                                        <td>1</td>
+                                        <td>RS 548.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0009</td>
+                                        <td>Michael G.</td>
+                                        <td>9:55 AM</td>
+                                        <td>4</td>
+                                        <td>RS 749.12</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="sales-graph">
+                        <h5>Today's Sales Performance</h5>
+                        <div class="progress-circle">
+                            <div class="progress-text">72%</div>
+                            <div class="progress-label">Completed</div>
+                        </div>
+
+                        <hr>
+
+                        <div class="target-info">
+                            <span class="target-label">Target :</span>
+                            <span class="target-value">RS 1,200,000</span>
+                        </div>
+                        <div class="target-info">
+                            <span class="target-label">Current :</span>
+                            <span class="target-value">RS 950,000</span>
+                        </div>
+                        <div class="target-info">
+                            <span class="target-label">Remaining :</span>
+                            <span class="target-value remaining">RS 250,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
